@@ -8,6 +8,8 @@ import frappe
 from frappe import _
 from shopify.resources import Webhook
 from shopify.session import Session
+from shopify import ApiVersion, Release
+ApiVersion.define_version(Release("2024-07"))
 
 from ecommerce_integrations.shopify.constants import (
 	API_VERSION,
